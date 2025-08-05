@@ -1,54 +1,109 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Report a bug for Claude to investigate and fix
 title: '[BUG] '
-labels: 'bug'
+labels: 'bug, claude-code'
 assignees: ''
-
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Bug Description
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Create agent with config '...'
-2. Send game state '....'
-3. See error
+<!-- Clear, concise description of the bug -->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Steps to Reproduce
 
-**Actual behavior**
-What actually happened. Include error messages and stack traces.
+<!-- Exact steps to reproduce the issue -->
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+1.
+2.
+3.
 
-**Environment:**
- - Node version: [e.g. 18.0.0]
- - Wrangler version: [e.g. 3.0.0]
- - OS: [e.g. macOS 13.0]
- - Browser (if applicable): [e.g. Chrome 120]
+## Expected Behavior
 
-**Agent Configuration:**
+<!-- What should happen? -->
+
+## Actual Behavior
+
+<!-- What actually happens? -->
+
+## Error Messages
+
+<!-- Include any error messages, stack traces, or logs -->
+
+```
+Paste error messages here
+```
+
+## Root Cause Analysis Request
+
+<!-- Ask Claude to investigate specific aspects -->
+
+- [ ] Identify root cause
+- [ ] Check for related issues
+- [ ] Assess impact on other components
+- [ ] Suggest fix approach
+
+## Environment
+
+<!-- System and version information -->
+
+- **Node version:**
+- **Wrangler version:**
+- **OS:**
+- **Browser (if applicable):**
+
+## Code Context
+
+<!-- Relevant code snippets or configurations -->
+
+### Agent Configuration (if applicable):
+
 ```json
 {
-  "skillLevel": "intermediate",
-  "personality": "balanced-bob",
+  "skillLevel": "",
+  "personality": "",
   "enableLLM": false
 }
 ```
 
-**Game State (if applicable):**
+### Game State (if applicable):
+
 ```json
 {
-  "hand": ["As", "Kd"],
-  "communityCards": ["Qh", "Js", "3c"],
-  "pot": 500,
-  "toCall": 200
+  "hand": [],
+  "communityCards": [],
+  "pot": 0,
+  "toCall": 0
 }
 ```
 
-**Additional context**
-Add any other context about the problem here.
+## Affected Files
+
+<!-- List files Claude should examine -->
+
+- `src/...`
+- `tests/...`
+
+## Severity Assessment
+
+- [ ] Critical - System down/data loss
+- [ ] High - Major feature broken
+- [ ] Medium - Feature partially working
+- [ ] Low - Minor issue
+
+## Suggested Fix Approach
+
+<!-- Optional: Your thoughts on how to fix -->
+
+## Additional Context
+
+<!-- Any other relevant information -->
+
+## Definition of Done
+
+- [ ] Bug reproduced and understood
+- [ ] Root cause identified
+- [ ] Fix implemented
+- [ ] Tests added to prevent regression
+- [ ] Documentation updated if needed
+- [ ] PR created with fix

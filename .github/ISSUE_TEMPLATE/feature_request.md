@@ -1,29 +1,120 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: Request a new feature for Claude to design and implement
 title: '[FEATURE] '
-labels: 'enhancement'
+labels: 'enhancement, claude-code'
 assignees: ''
-
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## Feature Description
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+<!-- Clear description of the desired feature -->
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Problem Statement
 
-**Use Case**
-Describe how this feature would be used in a real-world scenario.
+<!-- What problem does this feature solve? -->
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## Proposed Solution
 
-**Would you be willing to contribute this feature?**
-- [ ] Yes, I'd like to implement this feature
-- [ ] Yes, but I would need guidance
-- [ ] No, but I'm available for testing
-- [ ] No
+<!-- How should this feature work? -->
+
+## User Stories
+
+<!-- Who will use this and how? -->
+
+As a [type of user], I want [goal] so that [benefit].
+
+## Acceptance Criteria
+
+<!-- Specific, testable criteria for completion -->
+
+- [ ]
+- [ ]
+- [ ]
+
+## Technical Design Request
+
+<!-- What Claude should provide -->
+
+- [ ] API design
+- [ ] Data model design
+- [ ] UI/UX considerations
+- [ ] Integration points
+- [ ] Performance considerations
+- [ ] Security implications
+
+## Alternatives Considered
+
+<!-- Other approaches that were considered -->
+
+## Implementation Approach
+
+<!-- Suggested implementation strategy -->
+
+1.
+2.
+3.
+
+## Dependencies
+
+<!-- What this feature depends on -->
+
+- Existing features:
+- External services:
+- Libraries needed:
+
+## Impact Analysis
+
+<!-- How this affects the system -->
+
+- **Performance impact:**
+- **Security impact:**
+- **Breaking changes:**
+- **Migration required:**
+
+## Testing Strategy
+
+<!-- How to test this feature -->
+
+- Unit tests:
+- Integration tests:
+- User acceptance tests:
+
+## Documentation Needs
+
+<!-- What documentation is required -->
+
+- [ ] API documentation
+- [ ] User guide
+- [ ] Configuration guide
+- [ ] Migration guide
+
+## Success Metrics
+
+<!-- How to measure success -->
+
+-
+-
+
+## Priority
+
+- [ ] Critical - Core functionality
+- [ ] High - Important for users
+- [ ] Medium - Nice to have
+- [ ] Low - Future enhancement
+
+## Estimated Effort
+
+- [ ] Small (1-2 days)
+- [ ] Medium (3-5 days)
+- [ ] Large (1-2 weeks)
+- [ ] XL (> 2 weeks)
+
+## Definition of Done
+
+- [ ] Feature implemented
+- [ ] Tests written and passing
+- [ ] Documentation complete
+- [ ] Code reviewed
+- [ ] Deployed to staging
+- [ ] User acceptance verified
