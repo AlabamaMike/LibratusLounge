@@ -331,6 +331,7 @@ export const CHAT_TEMPLATES = {
   win_big_pot: [
     "Easy game!",
     "Thanks for the chips!",
+    "On yer bike!",
     "{}",  // Silent option
   ],
   bad_beat: [

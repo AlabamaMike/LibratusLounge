@@ -1,0 +1,80 @@
+name = "libratus-lounge"
+main = "src/index.ts"
+compatibility_date = "2024-01-15"
+node_compat = true
+
+# Build is handled by npm scripts
+
+[vars]
+ENVIRONMENT = "development"
+DEBUG_MODE = "true"
+LOG_LEVEL = "info"
+
+# KV Namespaces
+[[kv_namespaces]]
+binding = "DECISION_CACHE"
+id = "DECISION_CACHE_DEV"
+preview_id = "DECISION_CACHE_PREVIEW"
+
+# Durable Objects
+[[durable_objects.bindings]]
+name = "AGENT_MANAGER"
+class_name = "AgentManager"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["AgentManager"]
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "libratus-lounge-dev"
+database_id = "DB_ID_DEV"
+
+# Analytics Engine
+[[analytics_engine_datasets]]
+binding = "ANALYTICS"
+
+# AI Bindings
+[ai]
+binding = "AI"
+
+# Development Environment
+[env.development]
+name = "libratus-lounge-dev"
+vars = { ENVIRONMENT = "development", DEBUG_MODE = "true", LOG_LEVEL = "debug" }
+
+[[env.development.kv_namespaces]]
+binding = "DECISION_CACHE"
+id = "DECISION_CACHE_DEV"
+
+# Staging Environment
+[env.staging]
+name = "libratus-lounge-staging"
+vars = { ENVIRONMENT = "staging", DEBUG_MODE = "false", LOG_LEVEL = "info" }
+
+[[env.staging.kv_namespaces]]
+binding = "DECISION_CACHE"
+id = "DECISION_CACHE_STAGING"
+
+# Production Environment
+[env.production]
+name = "libratus-lounge"
+vars = { ENVIRONMENT = "production", DEBUG_MODE = "false", LOG_LEVEL = "warn" }
+
+[[env.production.kv_namespaces]]
+binding = "DECISION_CACHE"
+id = "DECISION_CACHE_PROD"
+
+# Rate limiting
+[[unsafe.bindings]]
+name = "RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "1"
+simple = { limit = 100, period = 60 }
+
+# Secrets (set via wrangler secret or dashboard)
+# PRIMO_POKER_API_KEY
+# ANTHROPIC_API_KEY
+# OPENAI_API_KEY
+# WEBHOOK_SECRET
